@@ -1,4 +1,4 @@
-var TokenType, SimpleTokens, tokenize;
+var TokenType, SimpleTokens, tokenize, _tokenize;
 
 TokenType = {
     JSONSTRING: 'JSONSTRING',
@@ -23,4 +23,21 @@ SimpleTokens = {
     OPENPAREN: '(', CLOSEPAREN: ')',
     FUNCTION_KW: /^function\b/,
     RETURN_KW: /^return\b/
+};
+
+tokenize = function (src) {
+    var tokens = [],
+        emit;
+
+    emit = function (token) {
+        token.push(token);
+    };
+
+    _tokenize(src, emit);
+
+    return tokens;
+};
+
+_tokenize = function (src, emit) {
+    
 };
