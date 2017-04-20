@@ -3,7 +3,7 @@ JSON + ANF
 
 The semantics of ANF encoded with a subset of Javascript.  
 
-[http://en.wikipedia.org/wiki/Administrative_normal_form](Administrative Normal Form on Wikipedia)
+[Administrative Normal Form on Wikipedia](http://en.wikipedia.org/wiki/Administrative_normal_form)
 
     EXP ::= VAL VAL
          |  let VAR = EXP in EXP
